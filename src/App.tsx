@@ -3,12 +3,18 @@ import Conversor from './components/Conversor';
 
 import Header from './components/Header';
 
+import {Provider} from 'react-redux';
+
+import store from './store';
+
 function App() {
   return (
-    <div>
-      <Header />
-      <Conversor />
-    </div>
+    <Provider store={store}>
+      <div>
+        <Header />
+        <Conversor />
+      </div>
+    </Provider>
   );
 }
 
