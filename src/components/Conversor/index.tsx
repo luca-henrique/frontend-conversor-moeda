@@ -1,6 +1,11 @@
+import {useSelector} from 'react-redux';
 import Form from '../Formulario';
 
 const Conversor = () => {
+  const amount = useSelector((state: any) => state.convert);
+
+  console.log(amount);
+
   return (
     <div className='content'>
       <div className='row justify-content-md-center'>

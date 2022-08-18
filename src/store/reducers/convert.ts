@@ -1,8 +1,8 @@
 import {CONVERT_COIN_REQUEST} from '../actions/index';
 
-const INITIAL_STATE = [];
+const INITIAL_STATE: any[] = [];
 
-export default function (state = INITIAL_STATE, action) {
+export default function (state = INITIAL_STATE, action: any) {
   switch (action.type) {
     case CONVERT_COIN_REQUEST:
       return {

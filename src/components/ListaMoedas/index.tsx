@@ -1,6 +1,11 @@
-const SelectCoin = () => {
+const SelectCoin = ({value, onChange}: any) => {
   return (
-    <select name='currencies' className='form-control'>
+    <select
+      name='currencies'
+      className='form-control'
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+    >
       <option value='AED' title='United Arab Emirates Dirham'>
         AED
       </option>
