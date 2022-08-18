@@ -6,7 +6,7 @@ const BASE_URL = 'https://apilayer.net/api';
 export const CONVERT_COIN_REQUEST = 'CONVERT_COIN_REQUEST';
 
 export function converteMoedas(converte: any) {
-  const url = `${BASE_URL}/convert?acess_key=${api_key}`;
+  const url = `${BASE_URL}/convert?access_key=${api_key}`;
 
   const params: any = {
     from: converte.de,
